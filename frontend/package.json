@@ -1,0 +1,53 @@
+{
+  "name": "vaccine-distribution-system",
+  "version": "1.2.0",
+  "private": true,
+  "homepage": "https://demos.creative-tim.com/",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.1",
+    "@truffle/hdwallet-provider": "^1.5.1",
+    "antd": "^4.16.13",
+    "axios": "^0.24.0",
+    "bootstrap": "4.5.3",
+    "chart.js": "2.9.4",
+    "classnames": "2.2.6",
+    "google-maps-react": "^2.0.6",
+    "node-sass": "4.14.1",
+    "node-sass-package-importer": "5.3.2",
+    "perfect-scrollbar": "1.5.0",
+    "prop-types": "15.7.2",
+    "react": "17.0.1",
+    "react-chartjs-2": "2.11.1",
+    "react-dom": "17.0.1",
+    "react-jss": "^10.8.2",
+    "react-notification-alert": "0.0.13",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "4.0.1",
+    "reactstrap": "8.7.1",
+    "web3": "^1.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.css",
+    "minify-scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.min.css --output-style compressed",
+    "map-scss": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.css --source-map true"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "optionalDependencies": {
+    "eslint-plugin-flowtype": "5.2.0",
+    "jquery": "3.5.1",
+    "typescript": "4.1.2"
+  }
+}
